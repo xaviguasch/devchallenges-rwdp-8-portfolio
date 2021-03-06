@@ -11,6 +11,8 @@
 :root {
   --clr-eggwhite: #f2f2f2;
   --clr-white: #ffffff;
+  --clr-progress-bar-grey: #c4c4c4;
+  --clr-progress-bar-blue: #2f80ed;
 
   --clr-grey-text: #828282;
   --clr-clear-text: #e0e0e0;
@@ -268,4 +270,43 @@ p {
 
 .hobbie--name {
   margin-bottom: 0.75em;
+}
+
+/* Frontend */
+
+.frontend--title {
+  margin-bottom: 1.5em;
+}
+
+.technology--level {
+  margin-bottom: 1em;
+}
+
+.level--bar--background {
+  width: 85%;
+  height: 0.6rem;
+  background-color: var(--clr-progress-bar-grey);
+  border-radius: 0.75rem;
+  margin-top: 0.5em;
+}
+
+.level--bar {
+  width: 50%;
+  height: 0.6rem;
+  background-color: var(--clr-progress-bar-blue);
+  border-radius: 0.75rem;
+  margin-top: 0.5em;
+}
+
+.progress-60 {
+  width: 60%;
+}
+.progress-70 {
+  width: 70%;
+}
+.progress-80 {
+  width: 80%;
+}
+.progress-90 {
+  width: 90%;
 }
