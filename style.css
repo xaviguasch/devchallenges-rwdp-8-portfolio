@@ -376,6 +376,6 @@ p {
 /* Footer */
 
 .footer--text {
-  margin-top: 3em;
+  margin: 3em auto 1em;
   text-align: center;
 }
