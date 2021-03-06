@@ -139,7 +139,7 @@ p {
 
 .project--text {
   font: var(--font-16);
-  color: var(--clr-gray-text);
+  color: var(--clr-grey-text);
 }
 
 .blog--tags {
@@ -168,6 +168,16 @@ p {
 }
 
 /* Buttons */
+.btn {
+  font: var(--font-18);
+  color: var(--clr-white);
+  background-color: var(--clr-progress-bar-blue);
+}
+
+.btn-active {
+  color: var(--clr-progress-bar-blue);
+  background-color: var(--clr-white);
+}
 
 /*///////////////////////////////*/
 /* SECTIONS */
@@ -272,9 +282,10 @@ p {
   margin-bottom: 0.75em;
 }
 
-/* Frontend */
+/* Frontend & Design */
 
-.frontend--title {
+.frontend--title,
+.design--title {
   margin-bottom: 1.5em;
 }
 
@@ -309,4 +320,62 @@ p {
 }
 .progress-90 {
   width: 90%;
+}
+
+/* Project cards */
+.project--image {
+  margin-bottom: 0.5em;
+}
+
+.project--image--img {
+  width: 100%;
+}
+
+.project--title {
+  margin: 1em auto;
+}
+
+.project--text {
+  margin: 1.2em auto;
+}
+
+.project--buttons {
+  margin: 2em auto;
+}
+
+.btn {
+  padding: 1em 2em;
+  width: 40%;
+  border: none;
+  border-radius: 1em;
+}
+
+.btn-active {
+  border: 1px solid;
+}
+
+/* Blog card */
+
+.blog--title {
+  margin: 1em auto;
+}
+
+.blog--text {
+  margin: 1.2em auto;
+}
+
+.blog--link {
+  margin: 1em auto;
+}
+
+.blog--image--img {
+  width: 100%;
+  border-radius: 1em;
+}
+
+/* Footer */
+
+.footer--text {
+  margin-top: 3em;
+  text-align: center;
 }
