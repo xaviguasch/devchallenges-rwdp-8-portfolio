@@ -20,19 +20,19 @@ const filterProjects = (e) => {
 
   if (clickedBtn === 'css-btn') {
     cssProjArr.map((proj) => {
-      proj.style.display = 'unset'
+      proj.style.display = 'block'
     })
     projectsSelected.innerText = cssProjArr.length
   }
   if (clickedBtn === 'responsive-btn') {
     responsiveProjArr.map((proj) => {
-      proj.style.display = 'unset'
+      proj.style.display = 'block'
     })
     projectsSelected.innerText = responsiveProjArr.length
   }
   if (clickedBtn === 'all-btn') {
     allProjectsArr.map((proj) => {
-      proj.style.display = 'unset'
+      proj.style.display = 'block'
     })
 
     projectsSelected.innerText = allProjectsArr.length

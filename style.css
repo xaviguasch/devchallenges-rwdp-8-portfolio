@@ -169,14 +169,30 @@ p {
 
 /* Buttons */
 .btn {
-  font: var(--font-18);
+  font: var(--font-16);
   color: var(--clr-white);
   background-color: var(--clr-progress-bar-blue);
+}
+.btn:hover,
+.btn:focus {
+  /* transform: scale(1.1); */
+  transition: all 200ms;
+  color: var(--clr-progress-bar-blue);
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-black2-text);
 }
 
 .btn-active {
   color: var(--clr-progress-bar-blue);
   background-color: var(--clr-white);
+}
+.btn-active:hover,
+.btn:focus {
+  /* transform: scale(1.1); */
+  transition: all 200ms;
+  color: var(--clr-white);
+  background-color: var(--clr-progress-bar-blue);
+  border: 1px solid var(--clr-progress-bar-blue);
 }
 
 /*///////////////////////////////*/
@@ -344,10 +360,12 @@ p {
 }
 
 .btn {
-  padding: 1em 2em;
+  padding: 1em 1.5em;
   width: 40%;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
   border: none;
-  border-radius: 1em;
+  border-radius: 0.6em;
 }
 
 .btn-active {
