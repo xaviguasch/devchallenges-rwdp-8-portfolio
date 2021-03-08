@@ -18,7 +18,7 @@
   </head>
   <body>
     <div class="container">
-      <aside>
+      <aside class="aside--col">
         <div class="profile card">
           <div class="portrait">
             <img
@@ -133,7 +133,7 @@
         </div>
       </aside>
 
-      <main>
+      <main class="main--col">
         <div class="frontend--and--design">
           <div class="frontend card">
             <h2 class="frontend--title">FRONTEND</h2>
@@ -193,10 +193,17 @@
         </div>
 
         <div class="projects--number card">
-          <h2 class="projects--title">Projects (3)</h2>
+          <h2 class="projects--title">
+            Projects (<span id="projects-selected">3</span>)
+          </h2>
+          <div class="project--buttons">
+            <button class="btn" id="css-btn">CSS</button>
+            <button class="btn" id="responsive-btn">Responsive</button>
+            <button class="btn" id="all-btn">All</button>
+          </div>
         </div>
 
-        <div class="project--card card">
+        <div class="project--card card css-project" id="recipe-blog">
           <div class="project--image">
             <img
               class="project--image--img"
@@ -206,7 +213,7 @@
           </div>
           <div class="project--info">
             <div class="project--tags">
-              <p>#HTML #CSS #responsive</p>
+              <p>#HTML #CSS</p>
             </div>
             <div class="project--copy">
               <h3 class="project--title">Recipe Blog</h3>
@@ -223,7 +230,7 @@
           </div>
         </div>
 
-        <div class="project--card card">
+        <div class="project--card card css-project responsive-project" id="my-gallery">
           <div class="project--image">
             <img
               class="project--image--img"
@@ -250,7 +257,7 @@
           </div>
         </div>
 
-        <div class="project--card card">
+        <div class="project--card card responsive-project" id="checkout-page">
           <div class="project--image">
             <img
               class="project--image--img"
@@ -260,7 +267,7 @@
           </div>
           <div class="project--info">
             <div class="project--tags">
-              <p>#HTML #CSS #responsive</p>
+              <p>#HTML #CSS</p>
             </div>
             <div class="project--copy">
               <h3 class="project--title">Checkout</h3>
@@ -318,5 +325,7 @@
         <p class="footer--text">created by <b>xaviguasch</b> - devChallenges.io</p>
       </div>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
